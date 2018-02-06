@@ -1,4 +1,4 @@
-# [<img src="/demo/icon.png" width=30>]() Scrooge
+# [<img src="/demo/icon.png" width=30>](https://github.com/alessiovierti/amazon-deals-notifier) Scrooge
 
 Scrooge is a simple Android app which notifies you when an Amazon item you need is on sale.
 
