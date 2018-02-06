@@ -31,6 +31,7 @@ Get the latest [release](https://github.com/alessiovierti/amazon-deals-notifier/
 ## Authors
 
 * **Alessio Vierti** - *Initial work*
+* **[freepik](https://www.flaticon.com/authors/freepik)** - *App icon*
 
 ## License
 
