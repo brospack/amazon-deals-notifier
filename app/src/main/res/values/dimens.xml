@@ -1,0 +1,24 @@
+<resources>
+
+    <dimen name="item_row_height">72dp</dimen>
+    <dimen name="item_row_padding_start">16dp</dimen>
+    <dimen name="item_row_padding_end">16dp</dimen>
+    <dimen name="item_row_title_size">16sp</dimen>
+    <dimen name="item_row_current_price_size">16sp</dimen>
+    <dimen name="item_row_price_variation_size">16sp</dimen>
+
+    <dimen name="subheader_items_list_height">48dp</dimen>
+    <dimen name="subheader_items_list_padding_start">72dp</dimen>
+    <dimen name="subheader_items_list_padding_end">72dp</dimen>
+    <dimen name="subheader_items_list_size">16sp</dimen>
+
+    <dimen name="appbar_height">96dp</dimen>
+    <dimen name="toolbar_half_height">48dp</dimen>
+    <dimen name="toolbar_full_height">56dp</dimen>
+
+    <dimen name="add_item_fab_margin_start">16dp</dimen>
+    <dimen name="add_item_fab_margin_top">76dp</dimen>
+
+    <dimen name="progress_bar_linear_top_margin">50dp</dimen>
+
+</resources>

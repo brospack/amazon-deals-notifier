@@ -1,0 +1,47 @@
+<resources>
+
+    <style name="DefaultTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="colorControlNormal">@color/primaryTextColor</item>
+        <item name="android:windowBackground">@color/primaryLightColor</item>
+    </style>
+
+    <style name="DefaultTheme.NoActionBar" parent="DefaultTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ItemTheme">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="SubheaderTheme">
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:alpha">1</item>
+    </style>
+
+    <style name="DividerTheme">
+        <item name="android:background">@color/primaryTextColor</item>
+        <item name="android:alpha">0.12</item>
+    </style>
+
+    <style name="TextInputLayoutTheme" parent="@android:style/TextAppearance">
+
+    </style>
+
+    <style name="TextInputLayoutTheme.Label" parent="TextInputLayoutTheme">
+        <item name="android:textColor">@color/secondaryColor</item>
+    </style>
+
+    <style name="TextInputLayoutTheme.Hint" parent="TextInputLayoutTheme">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="TextInputLayoutTheme.Error" parent="TextInputLayoutTheme">
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+</resources>

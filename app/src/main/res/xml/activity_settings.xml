@@ -1,0 +1,61 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/title_items_list_update">
+
+        <SwitchPreference
+            android:key="@string/pref_key_update_on_boot"
+            android:defaultValue="@bool/pref_default_update_on_boot"
+            android:title="@string/title_update_on_boot"
+            android:summary="@string/msg_update_on_boot" />
+
+        <ListPreference
+            android:key="@string/pref_key_update_frequency"
+            android:defaultValue="@string/pref_default_update_frequency"
+            android:title="@string/title_update_frequency"
+            android:summary="@string/msg_update_frequency"
+            android:entries="@array/pref_entries_update_frequency"
+            android:entryValues="@array/pref_values_update_frequency"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_notifications">
+
+        <SwitchPreference
+            android:key="@string/pref_key_enable_notifications"
+            android:defaultValue="@bool/pref_default_enable_notifications"
+            android:title="@string/title_enable_notifications"
+            android:summary="@string/msg_enable_notifications" />
+
+        <RingtonePreference
+            android:key="@string/pref_key_notification_sound"
+            android:defaultValue="@string/pref_default_notification_sound"
+            android:title="@string/title_notification_sound"
+            android:summary="@string/msg_notification_sound"
+            android:dependency="@string/pref_key_enable_notifications"
+            android:ringtoneType="notification" />
+
+        <SwitchPreference
+            android:key="@string/pref_key_enable_vibration"
+            android:defaultValue="@bool/pref_default_enable_vibration"
+            android:title="@string/title_enable_vibration"
+            android:summary="@string/msg_enable_vibration"
+            android:dependency="@string/pref_key_enable_notifications" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_advanced">
+
+        <Preference
+            android:key="@string/pref_key_empty_items_list"
+            android:title="@string/title_empty_items_list"
+            android:summary="@string/msg_empty_items_list" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

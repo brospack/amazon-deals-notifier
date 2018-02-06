@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Preferences default values: -->
+    <bool name="pref_default_update_on_boot">true</bool>
+    <string name="pref_default_update_frequency" translatable="false">1</string>
+    <bool name="pref_default_enable_notifications">true</bool>
+    <string name="pref_default_notification_sound" translatable="false"></string>
+    <bool name="pref_default_enable_vibration">true</bool>
+    <!-- Preferences key: -->
+    <string name="pref_key_update_on_boot" translatable="false">update_on_boot</string>
+    <string name="pref_key_update_frequency" translatable="false">update_frequency</string>
+    <string name="pref_key_enable_notifications" translatable="false">enable_notifications</string>
+    <string name="pref_key_notification_sound" translatable="false">notification_sound</string>
+    <string name="pref_key_enable_vibration" translatable="false">enable_vibration</string>
+    <string name="pref_key_empty_items_list" translatable="false">empty_items_list</string>
+    <!-- ListPreferences values: -->
+    <integer-array name="pref_real_values_update_frequency">
+        <item>3600</item>
+        <item>86400</item>
+        <item>604800</item>
+    </integer-array>
+    <string-array name="pref_values_update_frequency">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- SharedPreferences: -->
+    <string name="sharedpref_file_name" translatable="false">preferences</string>
+    <string name="sharedpref_key_last_update" translatable="false">last_update</string>
+
+</resources>

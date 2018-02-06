@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_settings">Impostazioni</string>
+    <string name="title_items_list_update">Aggiornamento lista prodotti</string>
+    <string name="title_update_on_boot">Aggiorna lista prodotti al boot</string>
+    <string name="title_update_frequency">Frequenza degli aggiornamenti</string>
+    <string name="title_notifications">Notifiche</string>
+    <string name="title_enable_notifications">Abilita notifiche</string>
+    <string name="title_notification_sound">Suono di notifica</string>
+    <string name="title_enable_vibration">Abilita vibrazione</string>
+    <string name="title_advanced">Avanzate</string>
+    <string name="title_empty_items_list">Svuota lista dei prodotti</string>
+    <string name="title_add_item">Aggiungi prodotto alla tua lista</string>
+    <string name="title_items_on_sale">Prodotti in saldo</string>
+    <string name="title_items_not_discounted">Prodotti non in saldo</string>
+    <string name="title_confirmation_quit">Sei sicuro di voler uscire?</string>
+    <string name="title_confirmation_empty_items_list">Sei sicuro di voler svuotare la tua lista?</string>
+    <string name="title_some_items_on_sale">Ci sono alcuni prodotti in saldo!</string>
+    <string name="title_hint_item_title">Titolo (opzionale)</string>
+    <string name="msg_enable_notifications">Sii notificato quando almeno un prodotto è in saldo</string>
+    <string name="msg_update_on_boot">Aggiorna la tua lista al boot</string>
+    <string name="msg_update_frequency">Imposta quanto frequentemente aggiornare la tua lista</string>
+    <string name="msg_notification_sound">Imposta il suono di notifica, se abilitate</string>
+    <string name="msg_enable_vibration">Consenti alle notifiche di vibrare</string>
+    <string name="msg_empty_items_list">Suota la tua lista irreversibilmente</string>
+    <string name="msg_not_found">Non trovato</string>
+    <string name="msg_updated_ago">Aggiornato %1$s fa</string>
+    <string name="msg_update_successful">Lista aggiornata con successo</string>
+    <string name="msg_items_are_on_sale">%1$d prodotti sono in saldo</string>
+    <string name="msg_hint_title">Lascia vuoto per usare il valore di default</string>
+    <string name="msg_item_removed">Il prodotto è stato rimosso dalla tua lista</string>
+    <string name="error_invalid_url">URL non valido</string>
+    <string name="error_required_url">URL è richiesto</string>
+    <string name="error_add_item_unsuccessful">Non è stato possibile aggiungere il prodotto alla tua lista. Riprovare più tardi.</string>
+    <string name="error_update_unsuccessful">L\'aggiornamento è fallito a causa di un errore di connessione. Riprovare più tardi.</string>
+    <string name="action_cancel">Annulla</string>
+    <string name="action_yes">Si</string>
+    <string name="action_add">Aggiungi</string>
+    <string name="action_silent">Silenzioso</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="action_undo">ANNULLA</string>
+    <string name="d">g</string>
+    <string name="h">o</string>
+    <string-array name="pref_entries_update_frequency">
+        <item>Ogni ora</item>
+        <item>Ogni giorno</item>
+        <item>Ogni settimana</item>
+    </string-array>
+    <string name="title_play_services_needed">Installa Google Play Services</string>
+    <string name="msg_play_services_needed">Questa applicazione ha bisogno di Google Play Services per lavorare in background. Tutte le altre funzionalità funzioneranno lo stesso.</string>
+    <string name="action_ok">OK</string>
+</resources>

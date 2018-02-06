@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_main_activity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_half_height">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_cylinder_hat" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/add_item_fab_margin_start"
+        android:layout_marginTop="@dimen/add_item_fab_margin_top"
+        app:layout_anchor="@+id/toolbar_main_activity"
+        app:layout_anchorGravity="bottom|start"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/ic_action_add" />
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>
