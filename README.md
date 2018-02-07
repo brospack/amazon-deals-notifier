@@ -26,7 +26,8 @@ Get the latest [release](https://github.com/alessiovierti/amazon-deals-notifier/
 ## Known issues
 
 - Doesn't work for certain types of books;
-- The URL shared by the official Amazon app doesn't specify the item size (e.g. clothing, shoes): Scrooge considers the item price as the lowest price among the possible sizes.
+- The URL shared by the official Amazon app doesn't specify the item size (e.g. clothing, shoes): Scrooge considers the item price as the lowest price among the possible sizes;
+- Battery saving mode on Samsung devices seems to prevent the background service to run periodically.
 
 ## Authors
 
