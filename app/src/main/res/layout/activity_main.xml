@@ -16,10 +16,12 @@
             android:id="@+id/toolbar_main_activity"
             android:layout_width="match_parent"
             android:layout_height="@dimen/toolbar_half_height">
+            <!--
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_action_cylinder_hat" />
+            -->
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
