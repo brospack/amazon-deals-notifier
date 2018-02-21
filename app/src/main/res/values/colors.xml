@@ -2,6 +2,7 @@
 
 <resources>
 
+    <!-- Original colors:
     <color name="primaryColor">#263238</color>
     <color name="primaryLightColor">#4f5b62</color>
     <color name="primaryDarkColor">#000a12</color>
@@ -10,6 +11,17 @@
     <color name="secondaryDarkColor">#0093c4</color>
     <color name="primaryTextColor">#ffffff</color>
     <color name="secondaryTextColor">#000000</color>
+    -->
+
+    <color name="primaryColor">#3B4546</color>
+    <color name="primaryLightColor">#2C3534</color>
+    <color name="primaryDarkColor">#2C3534</color>
+    <color name="secondaryColor">#0195AC</color>
+    <color name="secondaryLightColor">#8BF6FF</color>
+    <color name="secondaryDarkColor">#0093C4</color>
+    <color name="primaryTextColor">#FFFFFF</color>
+    <color name="secondaryTextColor">#000000</color>
+
     <color name="colorRed">#ff5722</color>
     <color name="colorGreen">#4caf50</color>
 
