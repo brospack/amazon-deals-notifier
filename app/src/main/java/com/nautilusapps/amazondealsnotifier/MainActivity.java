@@ -123,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
 
                 });
 
+        getSharedContent();
+
         refreshList();
 
         // Compute and show how much time passed since the last update:
@@ -138,15 +140,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Checks if another app has shared with this one some text. If it has, tries to extract an url
+     * Checks if another app has shared with this one some text. If it has, tries to extract an URL
      * from the text and calls {@link AddItemActivity} specifying the initial value for the URL
      * field.<br>
      * Note: the URL must be a valid Amazon URL.
      */
-    @Override
-    public void onResume() {
-
-        super.onResume();
+    private void getSharedContent() {
 
         final Pattern amazonUrlPattern = Pattern.compile(AddItemActivity.AMAZON_URL_REGEX);
 
