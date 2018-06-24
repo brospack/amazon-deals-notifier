@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 /**
  * Allows the user to add an Amazon item to his list, by specifying its title and URL.<br>
@@ -199,7 +200,8 @@ public class AddItemActivity extends AppCompatActivity {
         String url = mUrlEditText.getText().toString();
         String title = mTitleEditText.getText().toString();
 
-        if (url.trim().matches("")) return false;
+        if (url.trim().matches(""))
+            return false;
 
         AmazonItemLookUp amazonItemLookUp = new AmazonItemLookUp(new String[]{url});
         AmazonItem amazonItem = amazonItemLookUp.getAmazonItems()[0];
@@ -209,11 +211,13 @@ public class AddItemActivity extends AppCompatActivity {
             return false;
         }
 
-        // If there there is a specified title:
-        if (!mTitleEditText.getText().toString().trim().matches("")) amazonItem.title = title;
+        // If there is a specified title:
+        if (!mTitleEditText.getText().toString().trim().matches(""))
+            amazonItem.title = title;
 
         DBHandler dbHandler = new DBHandler(getApplicationContext());
-        if (dbHandler.addItem(amazonItem) == -1L) return false;
+        if (dbHandler.addItem(amazonItem) == -1L)
+            return false;
 
         return true;
 

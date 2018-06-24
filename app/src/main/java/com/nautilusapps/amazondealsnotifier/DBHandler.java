@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class DBHandler extends SQLiteOpenHelper {
 
-    private static final String DB_NAME = "AmazonItems";
+    public static final String DB_NAME = "AmazonItems";
     private static final int DB_VERSION = 1;
     private Context mContext;
 
@@ -136,6 +136,36 @@ public class DBHandler extends SQLiteOpenHelper {
     }
 
     /**
+     * Checks whether an item is already in the database.
+     * @param item  Item to search.
+     * @return      {@code true} if the item is already in the database, {@code false} otherwise.
+     */
+    public boolean hasItem(@NonNull AmazonItem item) {
+
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+
+        String[] select = {
+                DBEntry._ID
+        };
+
+        Cursor cursor = sqLiteDatabase.query(
+                DBEntry.TABLE,
+                select,
+                DBEntry.URL + "=?",
+                new String[]{item.url},
+                null,
+                null,
+                null);
+
+        if (cursor.moveToNext()) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    /**
      * Removes an item from the database.
      * @param item  Item to remove.
      */
@@ -147,25 +177,39 @@ public class DBHandler extends SQLiteOpenHelper {
 
         sqLiteDatabase.delete(
                 DBEntry.TABLE,
-                DBEntry.URL + "='" + url + "'",
-                null);
+                DBEntry.URL + "=?",
+                new String[]{url});
         sqLiteDatabase.close();
 
     }
 
     /**
      * Updates the items in the database using an array containing the updated items. Finally,
-     * updates the timestamp of the last update.<br>
-     * Note: {@code items} can't contain any {@code null} value.
-     * @param items Array containing the updated items. Can't contain any {@code null} value.
+     * updates the timestamp of the last update.
+     * @param items Array containing the updated items.
      */
     public void updateItems(AmazonItem[] items) {
 
-        emptyTable();
+        SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 
         for (AmazonItem item : items) {
-            addItem(item);
+
+            ContentValues contentValues = new ContentValues();
+            contentValues.put(DBEntry.TITLE, item.title);
+            contentValues.put(DBEntry.CURRENT_PRICE, item.currentPrice);
+            contentValues.put(DBEntry.PREVIOUS_PRICE, item.previousPrice);
+            contentValues.put(DBEntry.URL, item.url);
+
+            sqLiteDatabase.update(
+                    DBEntry.TABLE,
+                    contentValues,
+                    DBEntry.URL + "=?",
+                    new String[]{item.url}
+            );
+
         }
+
+        sqLiteDatabase.close();
 
         updateTimestamp();
 
@@ -197,7 +241,7 @@ public class DBHandler extends SQLiteOpenHelper {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putLong(
                 mContext.getString(R.string.sharedpref_key_last_update),
-                -1
+                new Date().getTime()
         );
         editor.apply();
 

@@ -35,7 +35,10 @@ public class AmazonItemLookUpTest {
             "https://www.amazon.it/gp/product/B00P9DU6K2/ref=s9_acsd_top_hd_bw_blPnxP_c_x_1_w?pf_rd_m=A11IL2PNWYJU7H&pf_rd_s=merchandised-search-4&pf_rd_r=CBJQWCK0QF6E5G6XEC11&pf_rd_t=101&pf_rd_p=aa4f6e7d-c4f8-5bd7-8f7d-94242f7d0587&pf_rd_i=700638031&th=1&psc=1"
     };
 
-    public void getAmazonItems(String[] urls) {
+    @Test
+    public void getAmazonItemsTest() {
+
+        String[] urls = itemsExamples;
 
         AmazonItemLookUp lookUp = new AmazonItemLookUp(urls);
 
@@ -50,13 +53,6 @@ public class AmazonItemLookUpTest {
         }
 
         System.out.printf("Number of items: %d", urls.length);
-
-    }
-
-    @Test
-    public void getAmazonItemsTest() {
-
-        getAmazonItems(itemsExamples);
 
     }
 
