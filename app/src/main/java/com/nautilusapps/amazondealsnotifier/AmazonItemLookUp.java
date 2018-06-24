@@ -51,9 +51,9 @@ public class AmazonItemLookUp {
         public Float result;
         // Jsoup CSS queries:
         /** Selects the elements which contain the price on sale. */
-        private final String DEAL_PRICE_CSS_QUERY = "span[id*=dealprice]";
+        private final String DEAL_PRICE_CSS_QUERY = "span[id*=dealprice],span[id=priceblock_saleprice].a-size-medium.a-color-price,td.a-color-price.a-size-medium.a-align-bottom";
         /** Selects the elements which contain the current price. */
-        private final String PRICE_CSS_QUERY = "span[id*=ourprice],span[id*=saleprice],span.a-size-large.a-color-result.guild_priceblock_ourprice";
+        private final String PRICE_CSS_QUERY = "span[id*=ourprice],span[id*=saleprice],span.a-size-large.a-color-result.guild_priceblock_ourprice,span.a-size-medium.a-color-price.offer-price.a-text-normal";
         private Document mDocument;
 
         public GetPriceThread(Document document) { this.mDocument = document; }
@@ -103,7 +103,7 @@ public class AmazonItemLookUp {
          * </ul>
          * @param price The price to parse.
          * @return  The price value, as an instance of {@code Float}.<br>
-         *          If the string is {@code null} or not in a valid format returns {@code null}.
+         *          If the string is {@code null} or not in a valid format, returns {@code null}.
          */
         private Float parsePrice(String price) {
 
@@ -111,7 +111,7 @@ public class AmazonItemLookUp {
                 return null;
             }
 
-            Pattern pattern = Pattern.compile("((\\d+[.,])?\\d+\\d+[\\s.,]\\d+)");
+            Pattern pattern = Pattern.compile("(\\d+[.,\\s]\\d+)");
             Matcher matcher = pattern.matcher(price);
 
             if (matcher.find()) {
@@ -142,7 +142,7 @@ public class AmazonItemLookUp {
         public String result;
         // Jsoup CSS query:
         /** Selects the elements which contain the title. */
-        private final String TITLE_CSS_QUERY = "span[id=productTitle]";
+        private final String TITLE_CSS_QUERY = "span[id=ebooksProductTitle],span[id=productTitle]";
         private Document mDocument;
 
         public GetTitleThread(Document document) { this.mDocument = document; }

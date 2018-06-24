@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:icon="@mipmap/ic_launcher_square"
+        android:icon="@mipmap/ic_launcher_circle"
         android:roundIcon="@mipmap/ic_launcher_circle"
         android:label="@string/title_application"
         android:largeHeap="true"
