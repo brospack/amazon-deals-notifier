@@ -13,7 +13,7 @@
     <string name="title_advanced">Advanced</string>
     <string name="title_empty_items_list">Empty items list</string>
 
-    <string name="title_add_item">Add item to your list</string>
+    <string name="title_add_item">Add item to list</string>
     <string name="title_items_on_sale">Items on sale</string>
     <string name="title_items_not_discounted">Items not discounted</string>
     <string name="title_current_price">%1$s</string>
@@ -25,12 +25,12 @@
     <string name="title_hint_item_title">Title (optional)</string>
     <string name="title_hint_item_url">URL</string>
 
-    <string name="msg_enable_notifications">Be notified when at least one item is on sale</string>
+    <string name="msg_enable_notifications">Notify when at least one item is on sale</string>
     <string name="msg_update_on_boot">Update your list on boot</string>
     <string name="msg_update_frequency">Set how frequently to update your list</string>
     <string name="msg_notification_sound">Set the notification sound, if enabled</string>
     <string name="msg_enable_vibration">Enable the notification to vibrate</string>
-    <string name="msg_empty_items_list">Empty your list irreversibly</string>
+    <string name="msg_empty_items_list">Empty your list</string>
     <string name="msg_not_found">Not found</string>
     <string name="msg_updated_ago">Updated %1$s ago</string>
     <string name="msg_update_successful">List updated successfully</string>

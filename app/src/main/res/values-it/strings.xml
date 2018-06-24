@@ -17,12 +17,12 @@
     <string name="title_confirmation_empty_items_list">Sei sicuro di voler svuotare la tua lista?</string>
     <string name="title_some_items_on_sale">Ci sono alcuni prodotti in saldo!</string>
     <string name="title_hint_item_title">Titolo (opzionale)</string>
-    <string name="msg_enable_notifications">Sii notificato quando almeno un prodotto è in saldo</string>
-    <string name="msg_update_on_boot">Aggiorna la tua lista al boot</string>
+    <string name="msg_enable_notifications">Notificami quando almeno un prodotto è in saldo</string>
+    <string name="msg_update_on_boot">Aggiorna la lista al boot</string>
     <string name="msg_update_frequency">Imposta quanto frequentemente aggiornare la tua lista</string>
     <string name="msg_notification_sound">Imposta il suono di notifica, se abilitate</string>
     <string name="msg_enable_vibration">Consenti alle notifiche di vibrare</string>
-    <string name="msg_empty_items_list">Suota la tua lista irreversibilmente</string>
+    <string name="msg_empty_items_list">Suota la lista</string>
     <string name="msg_not_found">Non trovato</string>
     <string name="msg_updated_ago">Aggiornato %1$s fa</string>
     <string name="msg_update_successful">Lista aggiornata con successo</string>
