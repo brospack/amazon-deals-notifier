@@ -63,7 +63,9 @@ public class AmazonItemLookUpTest {
     @Test
     public void updateAmazonItemsTest() {
 
-        return;
+        AmazonItem[] items = new AmazonItemLookUp(itemsExamples).getAmazonItems();
+        AmazonItemLookUp itemLookUp = new AmazonItemLookUp(items, 500);
+        AmazonItem[] updatedItems = itemLookUp.updateAmazonItems();
 
     }
 
